@@ -27,10 +27,24 @@
 
 Nullclaw has access to:
 - `/Users/home/Downloads`
-- `/Users/home/projects`
+- `/Users/home/projects` (includes Obsidian vault)
 - `~/.nullclaw/workspace` (default)
 
 Configured via `autonomy.allowed_paths` in config.
+
+### Obsidian Vault
+
+Path: `/Users/home/projects/obsidian/`
+
+Key folders nullclaw reads from:
+- `obsidian/Journal` — daily journal entries
+- `obsidian/email-digest` — daily email digest summaries
+
+### Allowed Shell Commands
+
+`cat`, `ls`, `head`, `tail`, `wc`, `find`, `grep`
+
+Configured via `autonomy.allowed_commands`. These allow nullclaw to read files and list directories via shell when the `file_read` tool can't reach them.
 
 ## Commands Reference
 
